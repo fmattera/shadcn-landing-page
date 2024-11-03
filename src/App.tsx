@@ -10,26 +10,31 @@ import { Newsletter } from "./components/Newsletter";
 import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
-import { Sponsors } from "./components/Sponsors";
+
 import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
+import { CardHoverEffectDemo } from "./components/FeatureSectionDemo";
+import { FeaturesSectionDemo } from "./components/BentoGrid";
 import "./App.css";
+
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
-      <About />
+      {/* <Sponsors /> */}
+      <CardHoverEffectDemo />
+      <FeaturesSectionDemo />
+      {/* <About /> */}
       <HowItWorks />
-      <Features />
-      <Services />
+      {/* <Features /> */}
+      {/* <Services /> */}
       <Cta />
-      <Testimonials />
-      <Team />
+      {/* <Testimonials /> */}
+      {/* <Team /> */}
       <Pricing />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <FAQ />
       <Footer />
       <ScrollToTop />
