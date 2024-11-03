@@ -18,6 +18,8 @@ import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
 
+import { NavigationMenuDemo } from "./NavigationMenu";
+
 interface RouteProps {
   href: string;
   label: string;
@@ -112,32 +114,10 @@ export const Navbar = () => {
 
           {/* desktop */}
           <nav className="hidden md:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </a>
-            ))}
+            <NavigationMenuDemo /> 
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
-            <ModeToggle />
           </div>
         </NavigationMenuList>
       </NavigationMenu>

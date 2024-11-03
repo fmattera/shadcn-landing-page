@@ -117,7 +117,7 @@ export const HeroCards = () => {
               variant="secondary"
               className="text-sm text-primary"
             >
-              Most popular
+              Lifetime
             </Badge>
           </CardTitle>
           <div>
@@ -126,7 +126,7 @@ export const HeroCards = () => {
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            A simple way to get started with eComWizard
           </CardDescription>
         </CardHeader>
 
@@ -138,7 +138,7 @@ export const HeroCards = () => {
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["10,000 pageviews / mo.", "All features", "No credit card required"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
